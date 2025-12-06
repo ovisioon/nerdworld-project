@@ -13,6 +13,7 @@ import {
   arrayUnion,
   arrayRemove,
   getDoc,
+  setDoc,
 } from "firebase/firestore";
 
 const CATEGORIES = ["Todas", "Matemática", "Química", "Português"];
