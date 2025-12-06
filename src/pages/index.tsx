@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 type User = { name?: string } | null;
 
-export default function HomePage(): JSX.Element {
+export default function HomePage() {
   const router = useRouter();
   const [user, setUser] = useState<User>(null);
   const [hydrated, setHydrated] = useState(false);
