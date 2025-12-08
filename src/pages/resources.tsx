@@ -16,7 +16,7 @@ import {
   setDoc,
 } from "firebase/firestore";
 
-const CATEGORIES = ["Todas", "Matemática", "Ciências da Natureza","Ciências Humanas" "Português"];
+const CATEGORIES = ["Todas", "Matemática", "Ciências da Natureza","Ciências Humanas", "Português"];
 const TYPES = ["Todos", "pdf", "video", "link"];
 
 export default function ResourcesPage() {
