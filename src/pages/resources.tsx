@@ -132,9 +132,7 @@ export default function ResourcesPage() {
           </div>
 
           <div className="flex gap-2">
-            <button onClick={() => router.push("/dashboard")} className="px-3 py-2 rounded-lg border border-white/10">Painel</button>
-            <button onClick={() => router.push("/planner")} className="px-3 py-2 rounded-lg border border-white/10">Planner</button>
-            <button onClick={() => router.push("/pomodoro")} className="px-3 py-2 rounded-lg border border-white/10">Pomodoro</button>
+            <button onClick={() => router.push("/dashboard")} className="px-3 py-2 rounded-lg border border-white/10">Voltar</button>
           </div>
         </header>
 

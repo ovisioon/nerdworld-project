@@ -6,3 +6,5 @@ node_modules
 /coverage
 *.pem
 serviceAccountKey.json
+/keys
+/scripts/*.key.json

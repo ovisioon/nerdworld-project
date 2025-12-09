@@ -1,10 +1,13 @@
-// src/pages/pomodoro.tsx
+// src/pages/dailyselfcare.tsx
+import dynamic from "next/dynamic";
 import React from "react";
 import { useRouter } from "next/router";
-import Pomodoro from "../components/Pomodoro";
 import Image from "next/image";
 
-export default function PomodoroPage() {
+// Import dinamicamente sem SSR (componente usa Notification / window)
+const DailySelfCare = dynamic(() => import("../components/DailySelfCare"), { ssr: false });
+
+export default function DailySelfCarePage() {
   const router = useRouter();
 
   return (
@@ -16,8 +19,8 @@ export default function PomodoroPage() {
               <Image src="/logo.png" alt="logo" fill style={{ objectFit: "contain" }} />
             </div>
             <div>
-              <h1 className="text-2xl font-bold">Pomodoro — NerdWorld</h1>
-              <p className="text-sm text-muted">Modo focado para seus estudos</p>
+              <h1 className="text-2xl font-bold">Apoio & Autocuidado</h1>
+              <p className="text-sm text-muted">Pequenos hábitos que ajudam seu estudo</p>
             </div>
           </div>
 
@@ -26,7 +29,9 @@ export default function PomodoroPage() {
           </div>
         </header>
 
-        <Pomodoro />
+        <main className="grid grid-cols-1 gap-6">
+          <DailySelfCare />
+        </main>
       </div>
     </div>
   );
